@@ -16,6 +16,9 @@ class $AssetsImagesGen {
   /// File path: assets/images/avatar_2.svg
   String get avatar2 => 'assets/images/avatar_2.svg';
 
+  /// File path: assets/images/avatar_3.svg
+  String get avatar3 => 'assets/images/avatar_3.svg';
+
   /// File path: assets/images/balance.svg
   String get balance => 'assets/images/balance.svg';
 
@@ -53,6 +56,7 @@ class $AssetsImagesGen {
   List<String> get values => [
         avatar1,
         avatar2,
+        avatar3,
         balance,
         cardBackground,
         dashboard,
