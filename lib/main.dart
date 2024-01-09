@@ -1,3 +1,5 @@
+import 'package:dash_board/core/resources/color_manager.dart';
+import 'package:dash_board/core/resources/values_manager.dart';
 import 'package:flutter/material.dart';
 
 import 'features/views/dashboard_view.dart';
@@ -16,6 +18,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
+        iconTheme: IconThemeData(
+            color: ColorManager.primary),
         useMaterial3: false,
       ),
       home: const DashboardView(),
