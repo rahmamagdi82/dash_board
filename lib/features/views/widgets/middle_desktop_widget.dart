@@ -12,9 +12,10 @@ class MiddleDesktopWidget extends StatelessWidget {
     return const Column(
       children: [
         SizedBox(height: AppSize.s40,),
-        Expanded(child: AllExpensesWidget()),
+        AllExpensesWidget(),
         SizedBox(height: AppSize.s24,),
-        QuickInvoiceWidget()
+        QuickInvoiceWidget(),
+        SizedBox(height: AppSize.s32,),
       ],
     );
   }

@@ -13,28 +13,30 @@ class UserInfoWidget extends StatelessWidget {
   final User user;
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      tileColor: ColorManager.lightGray,
-      contentPadding: const EdgeInsets.all(AppPadding.p12),
+    return Card(
+      elevation: 0,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(AppSize.br12),
       ),
-      leading: SvgPicture.asset(user.image),
-      title: FittedBox(
-        alignment: AlignmentDirectional.topStart,
-        fit: BoxFit.scaleDown,
-        child: Text(
-          user.name,
-          style: FontStyles.getSemiBoldStyle(),
+      color: ColorManager.lightGray,
+      child: ListTile(
+        leading: SvgPicture.asset(user.image),
+        title: FittedBox(
+          alignment: AlignmentDirectional.topStart,
+          fit: BoxFit.scaleDown,
+          child: Text(
+            user.name,
+            style: FontStyles.getSemiBoldStyle(),
+          ),
         ),
-      ),
-      subtitle: FittedBox(
-        alignment: AlignmentDirectional.topStart,
-        fit: BoxFit.scaleDown,
-        child: Text(
-          user.email,
-          style: FontStyles.getRegularStyle(
-              fontSize: FontSize.s12, color: ColorManager.darkGray),
+        subtitle: FittedBox(
+          alignment: AlignmentDirectional.topStart,
+          fit: BoxFit.scaleDown,
+          child: Text(
+            user.email,
+            style: FontStyles.getRegularStyle(
+                fontSize: FontSize.s12, color: ColorManager.darkGray),
+          ),
         ),
       ),
     );
