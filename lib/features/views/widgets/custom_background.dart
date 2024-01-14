@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../core/resources/color_manager.dart';
 import '../../../core/resources/values_manager.dart';
 
-class CustomBackgroundWidget extends StatelessWidget {
-  const CustomBackgroundWidget({Key? key, required this.widget}) : super(key: key);
+class CustomBackground extends StatelessWidget {
+  const CustomBackground({Key? key, required this.widget}) : super(key: key);
   final Widget widget;
 
   @override

@@ -7,8 +7,8 @@ import '../../../core/resources/style_manager.dart';
 import '../../../core/resources/values_manager.dart';
 import '../../../models/user_model.dart';
 
-class UserInfoWidget extends StatelessWidget {
-  const UserInfoWidget({Key? key, required this.user}) : super(key: key);
+class UserInfo extends StatelessWidget {
+  const UserInfo({Key? key, required this.user}) : super(key: key);
 
   final User user;
   @override

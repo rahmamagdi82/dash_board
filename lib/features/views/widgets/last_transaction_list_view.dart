@@ -1,4 +1,4 @@
-import 'package:dash_board/features/views/widgets/user_info_widget.dart';
+import 'package:dash_board/features/views/widgets/user_info.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/resources/values_manager.dart';
@@ -35,7 +35,7 @@ class _LastTransactionListViewState extends State<LastTransactionListView> {
       child: ListView.separated(
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) => IntrinsicWidth(
-              child: UserInfoWidget(user: latestTransactions[index])),
+              child: UserInfo(user: latestTransactions[index])),
           separatorBuilder: (context, index) => const SizedBox(
                 width: AppSize.s12,
               ),

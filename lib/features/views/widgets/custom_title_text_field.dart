@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../core/resources/values_manager.dart';
 import 'custom_label.dart';
 
-class CustomTextFieldWidget extends StatelessWidget {
-  const CustomTextFieldWidget({Key? key, required this.title, required this.childWidget}) : super(key: key);
+class CustomTitleTextField extends StatelessWidget {
+  const CustomTitleTextField({Key? key, required this.title, required this.childWidget}) : super(key: key);
   final String title;
   final Widget childWidget;
 

@@ -2,6 +2,7 @@ import 'package:dash_board/core/resources/values_manager.dart';
 import 'package:dash_board/features/views/widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
 
+import 'last_desktop_widget.dart';
 import 'middle_desktop_widget.dart';
 
 class DesktopLayout extends StatelessWidget {
@@ -15,7 +16,7 @@ class DesktopLayout extends StatelessWidget {
         SizedBox(width: AppSize.s32,),
         Expanded(flex:3,child: MiddleDesktopWidget()),
         SizedBox(width: AppSize.s24,),
-        Expanded(flex:2,child: CustomDrawer()),
+        Expanded(flex:2,child: LastDesktopWidget()),
       ],
     );
   }

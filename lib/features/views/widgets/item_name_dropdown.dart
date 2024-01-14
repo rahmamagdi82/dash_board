@@ -4,8 +4,8 @@ import '../../../core/resources/color_manager.dart';
 import '../../../core/resources/style_manager.dart';
 import '../../../core/resources/values_manager.dart';
 
-class ItemNameWidget extends StatelessWidget {
-  const ItemNameWidget({Key? key}) : super(key: key);
+class ItemNameDropdown extends StatelessWidget {
+  const ItemNameDropdown({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

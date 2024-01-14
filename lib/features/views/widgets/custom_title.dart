@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../core/resources/font_manager.dart';
 import '../../../core/resources/style_manager.dart';
 
-class TitleWidget extends StatelessWidget {
-  const TitleWidget({Key? key, required this.title}) : super(key: key);
+class CustomTitle extends StatelessWidget {
+  const CustomTitle({Key? key, required this.title}) : super(key: key);
   final String title;
 
   @override

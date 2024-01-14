@@ -5,8 +5,8 @@ import '../../../core/utils/assets.gen.dart';
 import '../../../models/drawer_item_model.dart';
 import 'drawer_item_widget.dart';
 
-class BottomPartInDrawer extends StatelessWidget {
-  const BottomPartInDrawer({Key? key}) : super(key: key);
+class DrawerBottomSection extends StatelessWidget {
+  const DrawerBottomSection({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -4,8 +4,8 @@ import '../../../core/resources/color_manager.dart';
 import '../../../core/resources/values_manager.dart';
 import '../../../core/widgets/custom_button.dart';
 import '../../../core/widgets/custom_text_form_field.dart';
-import 'custom_text_field_widget.dart';
-import 'item_name_widget.dart';
+import 'custom_title_text_field.dart';
+import 'item_name_dropdown.dart';
 
 class QuickInvoiceForm extends StatelessWidget {
   const QuickInvoiceForm({Key? key}) : super(key: key);
@@ -17,7 +17,7 @@ class QuickInvoiceForm extends StatelessWidget {
         const Row(
           children: [
             Expanded(
-              child: CustomTextFieldWidget(
+              child: CustomTitleTextField(
                 title: 'Customer name',
                 childWidget: CustomTextFormField(
                     hintText: 'Type customer name',
@@ -28,7 +28,7 @@ class QuickInvoiceForm extends StatelessWidget {
               width: AppSize.s16,
             ),
             Expanded(
-              child: CustomTextFieldWidget(
+              child: CustomTitleTextField(
                 title: 'Customer Email',
                 childWidget: CustomTextFormField(
                     hintText: 'Type customer email',
@@ -43,7 +43,7 @@ class QuickInvoiceForm extends StatelessWidget {
         const Row(
           children: [
             Expanded(
-              child: CustomTextFieldWidget(
+              child: CustomTitleTextField(
                 title: 'Item name',
                 childWidget: CustomTextFormField(
                     hintText: 'Type item name',
@@ -54,9 +54,9 @@ class QuickInvoiceForm extends StatelessWidget {
               width: AppSize.s16,
             ),
             Expanded(
-              child: CustomTextFieldWidget(
+              child: CustomTitleTextField(
                   title: 'Item name',
-                  childWidget: ItemNameWidget()),
+                  childWidget: ItemNameDropdown()),
             ),
           ],
         ),
