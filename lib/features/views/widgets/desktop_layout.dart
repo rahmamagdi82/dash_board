@@ -17,6 +17,7 @@ class DesktopLayout extends StatelessWidget {
         Expanded(flex:3,child: MiddleDesktopWidget()),
         SizedBox(width: AppSize.s24,),
         Expanded(flex:2,child: LastDesktopWidget()),
+        SizedBox(width: AppSize.s32,),
       ],
     );
   }
