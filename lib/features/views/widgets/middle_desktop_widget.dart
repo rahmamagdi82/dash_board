@@ -9,13 +9,13 @@ class MiddleDesktopWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        SizedBox(height: AppSize.s40,),
-        AllExpensesWidget(),
-        SizedBox(height: AppSize.s24,),
-        QuickInvoiceWidget(),
-        SizedBox(height: AppSize.s32,),
+    return const CustomScrollView(
+      slivers: [
+        SliverToBoxAdapter(child: SizedBox(height: AppSize.s40,)),
+        SliverToBoxAdapter(child: AllExpensesWidget()),
+        SliverToBoxAdapter(child: SizedBox(height: AppSize.s24,)),
+        SliverToBoxAdapter(child: QuickInvoiceWidget()),
+        SliverToBoxAdapter(child: SizedBox(height: AppSize.s32,)),
       ],
     );
   }
