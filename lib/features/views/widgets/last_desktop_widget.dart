@@ -9,11 +9,12 @@ class LastDesktopWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        CardsAndTransactionHistorySection(),
-        SizedBox(height: AppSize.s24,),
-        IncomeSection()
+    return const CustomScrollView(
+      slivers: [
+        SliverToBoxAdapter(child: SizedBox(height: AppSize.s40,)),
+        SliverToBoxAdapter(child: CardsAndTransactionHistorySection()),
+        SliverToBoxAdapter(child: SizedBox(height: AppSize.s24,)),
+        SliverToBoxAdapter(child: IncomeSection())
       ],
     );
   }

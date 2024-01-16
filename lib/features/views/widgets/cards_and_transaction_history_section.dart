@@ -1,4 +1,3 @@
-import 'package:dash_board/core/resources/values_manager.dart';
 import 'package:dash_board/features/views/widgets/custom_background.dart';
 import 'package:dash_board/features/views/widgets/custom_divider.dart';
 import 'package:dash_board/features/views/widgets/my_card_section.dart';

@@ -22,7 +22,7 @@ class CustomDrawer extends StatelessWidget {
         padding: const EdgeInsets.only(
             left: AppPadding.p28,
             right: AppPadding.p20,
-            top: AppPadding.p50,
+            top: AppPadding.p40,
             bottom: AppPadding.p48),
         child: CustomScrollView(slivers: [
           SliverToBoxAdapter(

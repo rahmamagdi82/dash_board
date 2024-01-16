@@ -47,7 +47,7 @@ class MyCard extends StatelessWidget {
                 SvgPicture.asset(Assets.images.gallery)
               ],
             ),
-            Expanded(child: SizedBox()),
+            const Expanded(child: SizedBox()),
             Text(
               '0918 8124 0042 8129',
               style: FontStyles.getSemiBoldStyle(
