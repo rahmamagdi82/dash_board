@@ -12,5 +12,6 @@ class ColorManager{
   static Color lightBlue = const Color(0xff98DAFF);
   static Color green = const Color(0xff7DD97B);
   static Color gray = const Color(0xffE2DECD);
+  static Color scaffoldBackgroundColor = const Color(0xFFF7F9FA);
 
 }

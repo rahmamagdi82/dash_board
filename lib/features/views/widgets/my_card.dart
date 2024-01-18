@@ -17,7 +17,9 @@ class MyCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: AppPadding.p20,horizontal: AppPadding.p31),
         decoration: BoxDecoration(
-            image: DecorationImage(image: AssetImage(Assets.images.cardBackground.path),scale: 0.90),
+            image: DecorationImage(
+              fit: BoxFit.fill,
+              image: AssetImage(Assets.images.cardBackground.path),),
               color: ColorManager.secondary,
               borderRadius: BorderRadius.circular(AppSize.br12)),
         child: Column(

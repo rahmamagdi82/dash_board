@@ -25,11 +25,11 @@ class IncomeSection extends StatelessWidget {
         ),
         SizedBox(height: AppSize.s16,),
         Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Expanded(
                 child: IncomeChart()),
-            Spacer(),
+            SizedBox(width: AppSize.s10,),
             Expanded(
               flex: 2,
                 child: IncomeChartDetailsListView())
