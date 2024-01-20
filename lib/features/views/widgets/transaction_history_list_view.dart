@@ -1,4 +1,4 @@
-import 'package:dash_board/core/resources/values_manager.dart';
+import 'package:dash_board/core/utils/values_manager.dart';
 import 'package:dash_board/features/views/widgets/transaction_history_item.dart';
 import 'package:flutter/material.dart';
 

@@ -1,5 +1,5 @@
-import 'package:dash_board/core/resources/style_manager.dart';
-import 'package:dash_board/core/resources/values_manager.dart';
+import 'package:dash_board/core/utils/style_manager.dart';
+import 'package:dash_board/core/utils/values_manager.dart';
 import 'package:flutter/material.dart';
 
 import '../../../models/income_chart_details_model.dart';
@@ -23,12 +23,12 @@ class IncomeChartDetailsItem extends StatelessWidget {
         const SizedBox(width: AppSize.s12,),
         Text(
           item.title,
-          style: FontStyles.getRegularStyle(),
+          style: FontStyles.getRegularStyle(context),
         ),
         const Spacer(),
         Text(
           item.percent,
-          style: FontStyles.getMediumStyle()
+          style: FontStyles.getMediumStyle(context)
         )
       ],
     );

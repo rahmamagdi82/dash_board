@@ -1,5 +1,4 @@
-import 'package:dash_board/core/resources/color_manager.dart';
-import 'package:dash_board/core/resources/values_manager.dart';
+import 'package:dash_board/core/utils/color_manager.dart';
 import 'package:dash_board/features/views/widgets/adaptive_layout.dart';
 import 'package:dash_board/features/views/widgets/custom_drawer.dart';
 import 'package:dash_board/features/views/widgets/desktop_layout.dart';

@@ -1,5 +1,5 @@
-import 'package:dash_board/core/resources/color_manager.dart';
-import 'package:dash_board/core/resources/values_manager.dart';
+import 'package:dash_board/core/utils/color_manager.dart';
+import 'package:dash_board/core/utils/values_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 

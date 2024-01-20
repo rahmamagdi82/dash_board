@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../core/resources/color_manager.dart';
-import '../../../core/resources/font_manager.dart';
-import '../../../core/resources/style_manager.dart';
-import '../../../core/resources/values_manager.dart';
+import '../../../core/utils/color_manager.dart';
+import '../../../core/utils/font_manager.dart';
+import '../../../core/utils/style_manager.dart';
+import '../../../core/utils/values_manager.dart';
 import '../../../core/utils/assets.gen.dart';
 
 class MyCard extends StatelessWidget {
@@ -34,14 +34,14 @@ class MyCard extends StatelessWidget {
                     Text(
                       'Name card',
                       style:
-                      FontStyles.getRegularStyle(color: ColorManager.white),
+                      FontStyles.getRegularStyle(context,color: ColorManager.white),
                     ),
                     const SizedBox(
                       height: AppSize.s8,
                     ),
                     Text(
                       'Syah Bandi',
-                      style: FontStyles.getMediumStyle(
+                      style: FontStyles.getMediumStyle(context,
                           fontSize: FontSize.s20, color: ColorManager.white),
                     ),
                   ],
@@ -52,7 +52,7 @@ class MyCard extends StatelessWidget {
             const Expanded(child: SizedBox()),
             Text(
               '0918 8124 0042 8129',
-              style: FontStyles.getSemiBoldStyle(
+              style: FontStyles.getSemiBoldStyle(context,
                   fontSize: FontSize.s24, color: ColorManager.white),
             ),
             const SizedBox(
@@ -60,7 +60,7 @@ class MyCard extends StatelessWidget {
             ),
             Text(
               '12/20 - 124',
-              style: FontStyles.getRegularStyle(
+              style: FontStyles.getRegularStyle(context,
                   color: ColorManager.white),
             ),
           ],

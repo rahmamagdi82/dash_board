@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/resources/color_manager.dart';
-import '../../../core/resources/style_manager.dart';
-import '../../../core/resources/values_manager.dart';
+import '../../../core/utils/color_manager.dart';
+import '../../../core/utils/style_manager.dart';
+import '../../../core/utils/values_manager.dart';
 
 class ItemNameDropdown extends StatelessWidget {
   const ItemNameDropdown({Key? key}) : super(key: key);
@@ -21,7 +21,7 @@ class ItemNameDropdown extends StatelessWidget {
         children: [
           Text(
             'USD',
-            style: FontStyles.getRegularStyle(
+            style: FontStyles.getRegularStyle(context,
                 color: ColorManager.darkGray),
           ),
           const Icon(

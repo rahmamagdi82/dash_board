@@ -1,8 +1,8 @@
 import 'package:dash_board/features/views/widgets/user_info.dart';
 import 'package:flutter/material.dart';
 
-import '../../../core/resources/color_manager.dart';
-import '../../../core/resources/values_manager.dart';
+import '../../../core/utils/color_manager.dart';
+import '../../../core/utils/values_manager.dart';
 import '../../../core/utils/assets.gen.dart';
 import '../../../models/user_model.dart';
 import 'drawer_bottom_section.dart';

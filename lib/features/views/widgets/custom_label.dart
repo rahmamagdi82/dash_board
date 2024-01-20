@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/resources/style_manager.dart';
+import '../../../core/utils/style_manager.dart';
 
 class CustomLabel extends StatelessWidget {
   const CustomLabel({Key? key, required this.label}) : super(key: key);
@@ -8,6 +8,6 @@ class CustomLabel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(label, style: FontStyles.getMediumStyle());
+    return Text(label, style: FontStyles.getMediumStyle(context));
   }
 }

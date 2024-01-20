@@ -1,5 +1,5 @@
-import 'package:dash_board/core/resources/color_manager.dart';
-import 'package:dash_board/core/resources/values_manager.dart';
+import 'package:dash_board/core/utils/color_manager.dart';
+import 'package:dash_board/core/utils/values_manager.dart';
 import 'package:dash_board/features/views/widgets/income_chart_details_item.dart';
 import 'package:dash_board/models/income_chart_details_model.dart';
 import 'package:flutter/material.dart';

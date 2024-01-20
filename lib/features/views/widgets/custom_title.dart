@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/resources/font_manager.dart';
-import '../../../core/resources/style_manager.dart';
+import '../../../core/utils/font_manager.dart';
+import '../../../core/utils/style_manager.dart';
 
 class CustomTitle extends StatelessWidget {
   const CustomTitle({Key? key, required this.title}) : super(key: key);
@@ -9,6 +9,6 @@ class CustomTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(title,style: FontStyles.getSemiBoldStyle(fontSize: FontSize.s20),);
+    return Text(title,style: FontStyles.getSemiBoldStyle(context,fontSize: FontSize.s20),);
   }
 }

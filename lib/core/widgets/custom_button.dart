@@ -1,8 +1,8 @@
-import 'package:dash_board/core/resources/font_manager.dart';
+import 'package:dash_board/core/utils/font_manager.dart';
 import 'package:flutter/material.dart';
 
-import '../resources/style_manager.dart';
-import '../resources/values_manager.dart';
+import '../utils/style_manager.dart';
+import '../utils/values_manager.dart';
 
 
 class CustomButton extends StatelessWidget{
@@ -26,7 +26,7 @@ class CustomButton extends StatelessWidget{
           onPressed: onPressed,
           child: Text(
             text,
-            style: FontStyles.getSemiBoldStyle(fontSize: FontSize.s18,color: fontColor),
+            style: FontStyles.getSemiBoldStyle(context,fontSize: FontSize.s18,color: fontColor),
           )),
     );
   }

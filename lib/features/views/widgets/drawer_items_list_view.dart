@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/resources/values_manager.dart';
+import '../../../core/utils/values_manager.dart';
 import '../../../core/utils/assets.gen.dart';
 import '../../../models/drawer_item_model.dart';
 import 'drawer_item_widget.dart';

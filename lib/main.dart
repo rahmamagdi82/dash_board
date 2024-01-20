@@ -1,10 +1,12 @@
-import 'package:dash_board/core/resources/color_manager.dart';
+import 'package:dash_board/core/utils/color_manager.dart';
+import 'package:device_preview/device_preview.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'features/views/dashboard_view.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(DevicePreview(enabled: !kReleaseMode,builder: (BuildContext context) => const MyApp(),));
 }
 
 class MyApp extends StatelessWidget {
@@ -13,7 +15,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
       theme: ThemeData(
         iconTheme: IconThemeData(
             color: ColorManager.primary),

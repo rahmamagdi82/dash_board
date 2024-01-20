@@ -1,4 +1,4 @@
-import 'package:dash_board/core/resources/values_manager.dart';
+import 'package:dash_board/core/utils/values_manager.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/utils/assets.gen.dart';
@@ -21,37 +21,54 @@ class _ExpensesItemsListViewState extends State<ExpensesItemsListView> {
   ];
   @override
   Widget build(BuildContext context) {
+
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: items.asMap().entries.map((e) {
-        return Expanded(
-          child: InkWell(
-              onTap: () {
-                if (currentIndex != e.key) {
-                  setState(() {
-                    currentIndex = e.key;
-                  });
-                }
-              },
-              child: (e.key != 2)
-                  ? Row(
-                      children: [
-                        Expanded(
-                            child: ExpensesItem(
-                          isSelected: currentIndex == e.key,
-                          item: items[e.key],
-                        )),
-                        const SizedBox(
-                          width: AppSize.s12,
-                        ),
-                      ],
-                    )
-                  : ExpensesItem(
-                      isSelected: currentIndex == e.key,
-                      item: items[e.key],
-                    )),
-        );
-      }).toList(),
-    );
+      children: [
+      Expanded(
+        child: InkWell(
+            onTap: () {
+              if (currentIndex != 0) {
+                setState(() {
+                  currentIndex = 0;
+                });
+              }
+            },
+            child: ExpensesItem(
+              isSelected: currentIndex == 0,
+              item: items[0],
+            )),
+      ),
+      const SizedBox(width: AppSize.s12,),
+      Expanded(
+        child: InkWell(
+            onTap: () {
+              if (currentIndex != 1) {
+                setState(() {
+                  currentIndex = 1;
+                });
+              }
+            },
+            child: ExpensesItem(
+              isSelected: currentIndex == 1,
+              item: items[1],
+            )),
+      ),
+      const SizedBox(width: AppSize.s12,),
+      Expanded(
+        child: InkWell(
+            onTap: () {
+              if (currentIndex != 2) {
+                setState(() {
+                  currentIndex = 2;
+                });
+              }
+            },
+            child: ExpensesItem(
+              isSelected: currentIndex == 2,
+              item: items[2],
+            )),
+      ),
+    ],);
   }
 }

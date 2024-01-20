@@ -1,15 +1,14 @@
-import 'package:dash_board/core/resources/color_manager.dart';
+import 'package:dash_board/core/utils/color_manager.dart';
 import 'package:flutter/material.dart';
 
-import '../resources/style_manager.dart';
-import '../resources/values_manager.dart';
+import '../utils/style_manager.dart';
+import '../utils/values_manager.dart';
 
 class CustomTextFormField extends StatefulWidget {
-  const CustomTextFormField({super.key, required this.hintText, required this.keyboardType, this.isObscureText});
+  const CustomTextFormField({super.key, required this.hintText, required this.keyboardType,});
 
   final String hintText;
   final TextInputType keyboardType;
-  final bool? isObscureText;
 
 
   @override
@@ -25,7 +24,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
       keyboardType: widget.keyboardType,
       decoration: InputDecoration(
           hintText: widget.hintText,
-          hintStyle: FontStyles.getRegularStyle(color: ColorManager.darkGray),
+          hintStyle: FontStyles.getRegularStyle(context,color: ColorManager.darkGray),
           contentPadding: const EdgeInsets.all(AppPadding.p20),
           enabledBorder: customInputBorder(borderColor: ColorManager.lightGray),
           focusedBorder: customInputBorder(borderColor: ColorManager.primary),

@@ -1,3 +1,4 @@
+import 'package:dash_board/core/utils/values_manager.dart';
 import 'package:flutter/material.dart';
 
 class AdaptiveLayout extends StatelessWidget {
@@ -8,10 +9,10 @@ class AdaptiveLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context,constraints){
-      if(constraints.maxWidth < 800){
+      if(constraints.maxWidth < AppSize.tablet){
         return mobileLayout(context);
       }
-      else if(constraints.maxWidth < 1200){
+      else if(constraints.maxWidth < AppSize.deskTop){
         return tabletLayout(context);
       }
       else{

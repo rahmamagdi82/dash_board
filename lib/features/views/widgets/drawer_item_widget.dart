@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../core/resources/color_manager.dart';
-import '../../../core/resources/style_manager.dart';
-import '../../../core/resources/values_manager.dart';
+import '../../../core/utils/color_manager.dart';
+import '../../../core/utils/style_manager.dart';
+import '../../../core/utils/values_manager.dart';
 import '../../../models/drawer_item_model.dart';
 
 class DrawerItemWidget extends StatelessWidget {
@@ -23,7 +23,7 @@ class DrawerItemWidget extends StatelessWidget {
           fit: BoxFit.scaleDown,
           child: Text(
             drawerItem.title,
-            style: isSelected?FontStyles.getBoldStyle():FontStyles.getRegularStyle(
+            style: isSelected?FontStyles.getBoldStyle(context):FontStyles.getRegularStyle(context,
                 color: ColorManager.primary),
           )),
       trailing: isSelected

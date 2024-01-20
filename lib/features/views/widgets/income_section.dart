@@ -1,4 +1,4 @@
-import 'package:dash_board/core/resources/values_manager.dart';
+import 'package:dash_board/core/utils/values_manager.dart';
 import 'package:dash_board/features/views/widgets/custom_background.dart';
 import 'package:dash_board/features/views/widgets/custom_dropdown_button.dart';
 import 'package:dash_board/features/views/widgets/custom_title.dart';

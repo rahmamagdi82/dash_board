@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../core/resources/color_manager.dart';
-import '../../../core/resources/font_manager.dart';
-import '../../../core/resources/style_manager.dart';
-import '../../../core/resources/values_manager.dart';
+import '../../../core/utils/color_manager.dart';
+import '../../../core/utils/font_manager.dart';
+import '../../../core/utils/style_manager.dart';
+import '../../../core/utils/values_manager.dart';
 import '../../../models/user_model.dart';
 
 class UserInfo extends StatelessWidget {
@@ -26,7 +26,7 @@ class UserInfo extends StatelessWidget {
           fit: BoxFit.scaleDown,
           child: Text(
             user.name,
-            style: FontStyles.getSemiBoldStyle(),
+            style: FontStyles.getSemiBoldStyle(context),
           ),
         ),
         subtitle: FittedBox(
@@ -34,7 +34,7 @@ class UserInfo extends StatelessWidget {
           fit: BoxFit.scaleDown,
           child: Text(
             user.email,
-            style: FontStyles.getRegularStyle(
+            style: FontStyles.getRegularStyle(context,
                 fontSize: FontSize.s12, color: ColorManager.darkGray),
           ),
         ),

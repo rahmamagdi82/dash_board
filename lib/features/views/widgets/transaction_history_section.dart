@@ -1,10 +1,10 @@
-import 'package:dash_board/core/resources/color_manager.dart';
-import 'package:dash_board/core/resources/values_manager.dart';
+import 'package:dash_board/core/utils/color_manager.dart';
+import 'package:dash_board/core/utils/values_manager.dart';
 import 'package:dash_board/features/views/widgets/custom_title.dart';
 import 'package:dash_board/features/views/widgets/transaction_history_list_view.dart';
 import 'package:flutter/material.dart';
 
-import '../../../core/resources/style_manager.dart';
+import '../../../core/utils/style_manager.dart';
 
 class TransactionHistorySection extends StatelessWidget {
   const TransactionHistorySection({Key? key}) : super(key: key);
@@ -18,11 +18,11 @@ class TransactionHistorySection extends StatelessWidget {
           children: [
             const CustomTitle(title: 'Transaction History'),
             const Spacer(),
-            TextButton(onPressed: (){}, child: Text('See all',style: FontStyles.getMediumStyle(color: ColorManager.secondary),))
+            TextButton(onPressed: (){}, child: Text('See all',style: FontStyles.getMediumStyle(context,color: ColorManager.secondary),))
           ],
         ),
         const SizedBox(height: AppSize.s20,),
-        Text('13 April 2022',style: FontStyles.getRegularStyle(color: ColorManager.darkGray),),
+        Text('13 April 2022',style: FontStyles.getRegularStyle(context,color: ColorManager.darkGray),),
         const SizedBox(height: AppSize.s16,),
         const TransactionHistoryListView(),
       ],

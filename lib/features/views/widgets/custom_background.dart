@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/resources/color_manager.dart';
-import '../../../core/resources/values_manager.dart';
+import '../../../core/utils/color_manager.dart';
+import '../../../core/utils/values_manager.dart';
 
 class CustomBackground extends StatelessWidget {
   const CustomBackground({Key? key, required this.widget}) : super(key: key);

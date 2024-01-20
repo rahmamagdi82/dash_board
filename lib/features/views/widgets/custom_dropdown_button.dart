@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/resources/color_manager.dart';
-import '../../../core/resources/style_manager.dart';
-import '../../../core/resources/values_manager.dart';
+import '../../../core/utils/color_manager.dart';
+import '../../../core/utils/style_manager.dart';
+import '../../../core/utils/values_manager.dart';
 
 class CustomDropdownButton extends StatelessWidget {
   const CustomDropdownButton({Key? key}) : super(key: key);
@@ -23,13 +23,13 @@ class CustomDropdownButton extends StatelessWidget {
             value: 'Monthly',
             child: Text(
               'Monthly',
-              style: FontStyles.getMediumStyle(),
+              style: FontStyles.getMediumStyle(context),
             ),
           )
         ],
         onChanged: (value) {},
         value: 'Monthly',
-        style: FontStyles.getMediumStyle(),
+        style: FontStyles.getMediumStyle(context),
         dropdownColor:ColorManager.white,
         elevation: 0,
         icon: const Icon(Icons.keyboard_arrow_down),

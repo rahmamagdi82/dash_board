@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/resources/values_manager.dart';
+import '../../../core/utils/values_manager.dart';
 import 'custom_label.dart';
 
 class CustomTitleTextField extends StatelessWidget {
