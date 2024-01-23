@@ -1,16 +1,14 @@
-# dash_board
+# Dashboard
 
-A new Flutter project.
+## Description
+It is responsive, and adaptive user interfaces for dashboard.
 
-## Getting Started
+## Features
+- You can use the dashboard on different devices.
 
-This project is a starting point for a Flutter application.
+## Screenshots
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<div>
+<img src="https://github.com/rahmamagdi82/NY-Times-Most-Popular-Articles/assets/98878812/cf4a8b0f-46f3-4efc-a278-f0d1926e5dd0" width="300">
+<img src="https://github.com/rahmamagdi82/NY-Times-Most-Popular-Articles/assets/98878812/408423df-2789-4f8c-9571-c9af732c9122" width="300">
+</div>
